@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.helloandroid.MainActivity">
+
+    <!-- background -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/brrd1"
+        android:scaleType="centerCrop"
+        tools:ignore="contentDescription"
+        />
+
+    <!-- descriptive text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textone"
+        android:textAllCaps="true"
+        android:textColor="@color/semiwhite"
+        android:textSize="@dimen/main"
+        android:shadowColor="@color/black"
+        android:shadowRadius="@dimen/radius"
+        android:shadowDx="@dimen/xy"
+        android:shadowDy="@dimen/xy"
+        android:layout_marginTop="@dimen/margintop"
+        android:id="@+id/change"
+        android:textStyle="italic"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/texttwo"
+        android:textAllCaps="true"
+        android:textColor="@color/semiwhite"
+        android:textSize="@dimen/smalltext"
+        android:shadowColor="@color/black"
+        android:shadowRadius="@dimen/radius"
+        android:shadowDx="@dimen/xy"
+        android:shadowDy="@dimen/xy"
+        android:layout_marginLeft="@dimen/marginlefttwo"
+        android:layout_marginStart="@dimen/marginlefttwo"
+        android:id="@+id/your"
+        android:layout_below="@id/change"
+        android:textStyle="italic"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textthree"
+        android:textAllCaps="true"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/smalltext"
+        android:shadowColor="@color/black"
+        android:shadowRadius="@dimen/radius"
+        android:shadowDx="@dimen/xy"
+        android:shadowDy="@dimen/xy"
+        android:id="@+id/future"
+        android:layout_toRightOf="@id/your"
+        android:layout_toEndOf="@id/your"
+        android:layout_below="@id/change"
+        android:paddingLeft="@dimen/padleft"
+        android:paddingStart="@dimen/padleft"
+        android:paddingEnd="@dimen/padleft"
+        android:textScaleX="@dimen/scalex"
+        android:textStyle="italic"
+        />
+
+    <!-- logo and business name -->
+    <ImageView
+        android:layout_width="@dimen/smallerlogo"
+        android:layout_height="@dimen/smallerlogo"
+        android:src="@drawable/udacity2"
+        android:layout_below="@id/address"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imagelogo"
+        android:layout_marginTop="@dimen/logomargintop"
+        android:scaleType="centerCrop"
+        tools:ignore="contentDescription"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/businessname"
+        android:textSize="@dimen/maintextlogo"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:layout_below="@id/imagelogo"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textlogo"
+        android:shadowColor="@color/black"
+        android:shadowRadius="@dimen/radius"
+        android:shadowDy="@dimen/xy"
+        android:shadowDx="@dimen/xy"
+        />
+
+    <!-- website -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/website"
+        android:layout_below="@id/textlogo"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/url"
+        android:clickable="true"
+        android:focusable="true"
+        android:autoLink="web"
+        android:textColorLink="@color/white"
+        android:shadowColor="@color/black"
+        android:shadowRadius="@dimen/radius"
+        android:shadowDx="@dimen/xy"
+        android:shadowDy="@dimen/xy"
+        android:padding="@dimen/paddingweb"
+        />
+    <!-- phone  -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phone"
+        android:layout_below="@id/future"
+        android:layout_marginTop="@dimen/detailsmargintop"
+        android:autoLink="phone"
+        android:clickable="true"
+        android:focusable="true"
+        android:textColorLink="@color/white"
+        android:id="@+id/phone"
+        android:shadowColor="@color/black"
+        android:shadowRadius="@dimen/radius"
+        android:shadowDx="@dimen/xy"
+        android:shadowDy="@dimen/xy"
+        android:drawableLeft="@drawable/ph1"
+        android:drawableStart="@drawable/ph1"
+        android:drawablePadding="@dimen/drawpad"
+        android:layout_marginLeft="@dimen/marginleftfordetails"
+        android:layout_marginStart="@dimen/marginleftfordetails"
+        />
+    <!-- address -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/address"
+        android:layout_below="@id/phone"
+        android:autoLink="map"
+        android:clickable="true"
+        android:focusable="true"
+        android:textColorLink="@color/white"
+        android:shadowColor="@color/black"
+        android:shadowRadius="@dimen/radius"
+        android:shadowDx="@dimen/xy"
+        android:shadowDy="@dimen/xy"
+        android:id="@+id/address"
+        android:drawableLeft="@drawable/loc1"
+        android:drawableStart="@drawable/loc1"
+        android:layout_marginLeft="@dimen/marginleftfordetails"
+        android:layout_marginStart="@dimen/marginleftfordetails"
+        android:drawablePadding="@dimen/drawpad"
+        android:layout_marginTop="@dimen/marginleftfordetails"
+        />
+
+
+</RelativeLayout>

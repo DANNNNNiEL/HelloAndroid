@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main">32sp</dimen>
+    <dimen name="radius">1</dimen>
+    <dimen name="xy">3</dimen>
+    <dimen name="margintop">180dp</dimen>
+    <dimen name="marginleft">32dp</dimen>
+    <dimen name="marginlefttwo">64dp</dimen>
+    <dimen name="marginleftfordetails">16dp</dimen>
+    <dimen name="spacetexts">28dp</dimen>
+    <dimen name="smalltext">16sp</dimen>
+    <dimen name="padleft">10dp</dimen>
+    <dimen name="scalex">2</dimen>
+    <dimen name="smallerlogo">70dp</dimen>
+    <dimen name="logomargintop">62dp</dimen>
+    <dimen name="drawpad">5dp</dimen>
+    <dimen name="detailsmargintop">48dp</dimen>
+    <dimen name="paddingweb">16dp</dimen>
+    <dimen name="maintextlogo">42sp</dimen>
+</resources>
